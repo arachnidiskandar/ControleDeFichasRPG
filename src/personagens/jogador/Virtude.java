@@ -4,11 +4,13 @@
  * and open the template in the editor.
  */
 package personagens.jogador;
-
+import java.util.ArrayList;
 /**
  *
  * @author augst
  */
 public class Virtude {
+    private String nomeVirtude, descricaoVirtude;
+    
     
 }

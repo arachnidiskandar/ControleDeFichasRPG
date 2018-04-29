@@ -5,10 +5,17 @@
  */
 package personagens.jogador;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author augst
  */
 public class Arcana {
+    private Hubris hubris;
+    private Virtude virtude;
+    public Arcana(Hubris hubris, Virtude virtude) {
+        
+    }
     
 }

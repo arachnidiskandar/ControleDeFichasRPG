@@ -5,10 +5,12 @@
  */
 package personagens.jogador;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author augst
  */
 public class Vantagens {
-    
+    private ArrayList<vantagem> vantagensPersonagem = new ArrayList();
 }

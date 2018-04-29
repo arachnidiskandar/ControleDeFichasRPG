@@ -12,7 +12,7 @@ package personagens.jogador;
 public class Atributos {
     private int vigor, finesse, determinacao, inteligencia, panache;
     private int vigorBonus, finesseBonus, determinacaoBonus, arguciaBonus, panacheBonus;
-    public Atributos(int vigor, int deter, int finesse, int argucia, int panache) {
+    public Atributos(int vigor, int deter, int finesse, int inteligencia, int panache) {
         this.vigor = vigor;
         this.finesse = finesse;
         this.determinacao = deter;

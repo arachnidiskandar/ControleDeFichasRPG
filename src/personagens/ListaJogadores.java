@@ -13,12 +13,25 @@ import java.util.ArrayList;
  */
 public class ListaJogadores {
     ArrayList<Jogador> listaJogadores = new ArrayList();
+
+    @Override
+    public String toString() {
+        return "ListaJogadores:\n" + getNomeJogadores() + "}\n";
+    }
     
     public void addJogador(Jogador j){
         this.listaJogadores.add(j);
     }
     public void removerJogador(Jogador j){
         listaJogadores.remove(j);
+    }
+    
+    public String getNomeJogadores(){
+        StringBuilder s = new StringBuilder();
+        for (Jogador j : listaJogadores) {
+            s.append((j.getInfo()).getNomeJogador() + "/n");
+        }
+        return s.toString();
     }
 }
 

@@ -16,6 +16,11 @@ public class Pericias {
      private boolean criacao = true;
      private int pontos;
 
+    @Override
+    public String toString() {
+            return "Pericias{" + "mira=" + mira + ", atletismo=" + atletismo + ", labia=" + labia + ", briga=" + briga + ", empatia=" + empatia + ", furtividade=" + furtividade + ", intimidacao=" + intimidacao + ", percepcao=" + percepcao + ", atuar=" + atuar + ", cavalgar=" + cavalgar + ", erudicao=" + erudicao + ", seduzir=" + seduzir + ", furto=" + furto + ", arteDaGuerra=" + arteDaGuerra + ", armas=" + armas + ", pontos disponíveis=" + pontos + "}\n";
+    }
+
     public Pericias() {
         this.pontos = 10;
     }
@@ -31,7 +36,7 @@ public class Pericias {
         return mira;
     }
 
-    public void setMira(int pnts) {
+    public void addMira(int pnts) {
         if (this.pontos - pnts < 1){
             System.out.println("Pontos Insuficientes.");
             return;

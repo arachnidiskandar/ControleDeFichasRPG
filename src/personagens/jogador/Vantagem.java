@@ -9,12 +9,17 @@ package personagens.jogador;
  *
  * @author augst
  */
-public class vantagem {
+public class Vantagem {
+
+    @Override
+    public String toString() {
+        return "Vantagem{" + "nomeVantagem=" + nomeVantagem + ", nomeNacao=" + nomeNacao + ", naCriacao=" + naCriacao + ", heroNaAtivacao=" + heroNaAtivacao + ", custoPnts=" + custoPnts + "}\n";
+    }
     private String nomeVantagem, nomeNacao;
     private boolean naCriacao, heroNaAtivacao;
     private int custoPnts;
 
-    public vantagem(String nomeVantagem, String nomeNacao, boolean naCriacao, boolean heroNaAtivacao, int custoPnts) {
+    public Vantagem(String nomeVantagem, String nomeNacao, boolean naCriacao, boolean heroNaAtivacao, int custoPnts) {
         this.nomeVantagem = nomeVantagem;
         this.nomeNacao = nomeNacao;
         this.naCriacao = naCriacao;

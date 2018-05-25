@@ -14,6 +14,11 @@ import java.util.ArrayList;
 public class Formacao {
     private String nomeFormacao; 
     private ArrayList<String> vantagens = new ArrayList();
+
+    @Override
+    public String toString() {
+        return "Formacao{" + "nomeFormacao=" + nomeFormacao + ", vantagens=" + getVantagens() + ", pericias=" + getPericias() + "}\n";
+    }
     private ArrayList<String> pericias = new ArrayList();            
 
     public Formacao(String nomeFormacao, ArrayList<String> vantagens, ArrayList<String> pericias) {
@@ -26,11 +31,17 @@ public class Formacao {
         return nomeFormacao;
     }
 
-    public ArrayList<String> getVantagens() {
-        return this.vantagens;
+    public String getVantagens() {
+        StringBuilder v = new StringBuilder();
+        for (String vantagens : this.pericias)
+            v.append(vantagens + ", ");
+        return v.toString();
     }
 
-    public ArrayList<String> getPericias() {
-        return this.pericias;
+    public String getPericias() {
+        StringBuilder peric = new StringBuilder();
+        for (String perks : this.pericias)
+            peric.append(perks + ", ");
+        return peric.toString();
     }
 }

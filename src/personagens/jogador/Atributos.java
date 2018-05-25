@@ -20,6 +20,11 @@ public class Atributos {
         this.panache = panache;
     }
 
+    @Override
+    public String toString() {
+        return "Atributos{" + "vigor=" + vigor + ", finesse=" + finesse + ", determinacao=" + determinacao + ", inteligencia=" + inteligencia + ", panache=" + panache + ", vigorBonus=" + vigorBonus + ", finesseBonus=" + finesseBonus + ", determinacaoBonus=" + determinacaoBonus + ", arguciaBonus=" + arguciaBonus + ", panacheBonus=" + panacheBonus + "}\n";
+    }
+
     public int getVigor() {
         return vigor;
     }

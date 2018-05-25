@@ -28,6 +28,19 @@ public class Informacoes {
         this.idiomas.add(nacao);
     }
 
+    @Override
+    public String toString() {
+        return "Informacoes{" + "nomeJogador=" + nomeJogador + ", nomePersonagem=" + nomePersonagem + ", grupo=" + grupo + ", religiao=" + religiao +
+                ", reputacao=" + reputacao + ", nacao=" + nacao + ", fortuna=" + fortuna + ", idiomas=" + printIdiomas() + "}\n";
+    }
+    
+    public String printIdiomas(){
+        StringBuilder result = new StringBuilder();
+        for (String idioma: idiomas)
+            result.append(',' + idioma);
+        return result.toString();
+    }
+    
     public String getNomeJogador() {
         return nomeJogador;
     }
@@ -46,10 +59,6 @@ public class Informacoes {
 
     public String getNacao() {
         return nacao;
-    }
-
-    public ArrayList<String> getIdiomas() {
-        return idiomas;
     }
 
     public String getReputacao() {

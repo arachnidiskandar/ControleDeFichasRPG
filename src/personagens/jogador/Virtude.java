@@ -11,6 +11,25 @@ import java.util.ArrayList;
  */
 public class Virtude {
     private String nomeVirtude, descricaoVirtude;
+
+    public Virtude(String nomeVirtude, String descricaoVirtude) {
+        this.nomeVirtude = nomeVirtude;
+        this.descricaoVirtude = descricaoVirtude;
+    }
+
+    @Override
+    public String toString() {
+        return "Virtude{" + "nomeVirtude=" + nomeVirtude + ", descricaoVirtude=" + descricaoVirtude + "}\n";
+    }
+
+    public String getNomeVirtude() {
+        return nomeVirtude;
+    }
+
+    public String getDescricaoVirtude() {
+        return descricaoVirtude;
+    }
+    
     
     
 }

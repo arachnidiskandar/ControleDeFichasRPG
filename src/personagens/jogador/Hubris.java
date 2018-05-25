@@ -5,7 +5,6 @@
  */
 package personagens.jogador;
 
-import java.util.ArrayList;
 
 /**
  *
@@ -13,4 +12,23 @@ import java.util.ArrayList;
  */
 public class Hubris {
     private String nomeHubris, descricaoHubris;
+
+    public Hubris(String nomeHubris, String descricaoHubris) {
+        this.nomeHubris = nomeHubris;
+        this.descricaoHubris = descricaoHubris;
+    }
+
+    public String getNomeHubris() {
+        return nomeHubris;
+    }
+
+    public String getDescricaoHubris() {
+        return descricaoHubris;
+    }
+
+    @Override
+    public String toString() {
+        return "Hubris{" + "nomeHubris=" + nomeHubris + ", descricaoHubris=" + descricaoHubris + "}\n";
+    }
+    
 }

@@ -20,9 +20,16 @@ public class Formacoes {
     public void removerFormacao (Formacao formacao){
         formacoesPersonagem.remove(formacao);
     }
-    public void printFormacoes(){
+    public String getFormacoes(){
+        StringBuilder s = new StringBuilder();
         for (Formacao formacao: formacoesPersonagem){
-            System.out.println(formacao.getNomeFormacao());
+            s.append(formacao.getNomeFormacao()+ ',');
         }
+        return s.toString();
+    }
+
+    @Override
+    public String toString() {
+        return "Formacoes{" + "formacoesPersonagem=" + getFormacoes() + "}\n";
     }
 }

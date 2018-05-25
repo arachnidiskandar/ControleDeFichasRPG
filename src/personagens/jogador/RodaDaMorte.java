@@ -26,6 +26,11 @@ public class RodaDaMorte {
         this.feridas -= qntd;
         this.feridasGraves = (this.feridas/5);  
     }
+
+    @Override
+    public String toString() {
+        return "RodaDaMorte{" + "feridas=" + feridas + ", feridasGraves=" + feridasGraves + "}\n";
+    }
     
     
     

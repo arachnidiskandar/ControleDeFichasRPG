@@ -11,25 +11,25 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.control.MenuItem;
+import javafx.scene.layout.AnchorPane;
 
 /**
  *
  * @author augst
  */
-public class FXMLDocumentController implements Initializable {
+public class TelaPrincipalController implements Initializable { 
+    @FXML
+    private MenuItem menuCriarPersonagem;
+    @FXML
+    private MenuItem menuPersonagens;
+    @FXML
+    private AnchorPane anchorPane;
     
     @FXML
-    private Label label;
-    
-    @FXML
-    private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
+    public void initialize(URL url, ResourceBundle rb) {
+        
     }
     
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
     
 }

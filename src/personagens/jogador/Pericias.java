@@ -12,7 +12,7 @@ package personagens.jogador;
 public class Pericias {
      private int mira = 0, atletismo = 0, labia = 0, briga = 0, empatia = 0, 
              furtividade = 0, intimidacao = 0, percepcao = 0, atuar = 0, cavalgar = 0,
-             erudicao = 0, seduzir = 0, furto = 0, arteDaGuerra = 0, armas = 0;
+             erudicao = 0, seduzir = 0, furto = 0, arteDaGuerra = 0, armas = 0, navegar = 0;
      private boolean criacao = true;
      private int pontos;
 
@@ -242,6 +242,20 @@ public class Pericias {
             System.out.println("Pontos Insuficientes.");
             return;
         }if(this.armas + pnts > 5 || criacao == true && this.armas + pnts > 3 ){
+            System.out.println("Valor máximo já atingido.");
+            return;
+        }this.armas += pnts;
+    }
+    
+    public int getNavegar() {
+        return this.navegar;
+    }
+    
+    public void addNavegar(int pnts) {
+        if (this.pontos - pnts < 1){
+            System.out.println("Pontos Insuficientes.");
+            return;
+        }if(this.navegar + pnts > 5 || criacao == true && this.navegar + pnts > 3 ){
             System.out.println("Valor máximo já atingido.");
             return;
         }this.armas += pnts;
